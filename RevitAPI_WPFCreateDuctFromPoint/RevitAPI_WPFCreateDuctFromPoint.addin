@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>"D:\RevitAPITrainig\RevitAPI_WPFCreateDuctFromPoint.dll"</Assembly>    
+    <AddInId>55A979E6-812C-41D1-B842-F4BF6BC35743</AddInId>
+    <FullClassName>RevitAPI_WPFCreateDuctFromPoint.Main</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <Text>Создание воздуховода по заданым точкам</Text>
+  </AddIn>
+</RevitAddIns>

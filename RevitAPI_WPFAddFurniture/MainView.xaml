@@ -1,0 +1,31 @@
+﻿<Window x:Class="RevitAPI_WPFAddFurniture.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPI_WPFAddFurniture"
+             mc:Ignorable="d" 
+             Height="200" Width="300"
+             Title="Добавление мебели">
+    <StackPanel >
+              
+        <Label Content="Тип мебели: "/>
+        <ComboBox ItemsSource="{Binding FurnitureTypes}"
+                  SelectedValue="{Binding SelectedFurnitureType}"
+                  DisplayMemberPath="Name"
+                  Margin="5"
+                  />
+             
+        
+        <Label Content="Уровень: "/>
+        <ComboBox ItemsSource="{Binding Levels}"
+                  SelectedValue="{Binding SelectedLevel}"
+                  DisplayMemberPath="Name"
+                  Margin="5"
+                  />
+      
+        <Button Content="Добавить"
+                Command="{Binding AddFurniture}"
+                Margin="5"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>"D:\RevitAPITrainig\RevitAPI_WPFElementBetweenPoints.dll"</Assembly>    
+    <AddInId>84583A24-AFC2-4B7F-B720-C891F77931A4</AddInId>
+    <FullClassName>RevitAPI_WPFElementBetweenPoints.Main</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <Text>Расстановка элементов между точками</Text>
+  </AddIn>
+</RevitAddIns>

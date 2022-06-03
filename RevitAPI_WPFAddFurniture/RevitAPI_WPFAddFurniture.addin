@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>"D:\RevitAPITrainig\RevitAPI_WPFAddFurniture.dll"</Assembly>  
+    <AddInId>13221126-3E1C-49BE-AF7D-5F30919BABE3</AddInId>
+    <FullClassName>RevitAPI_WPFAddFurniture.Main</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <Text>Добавление мебели в выбраную точку</Text>
+  </AddIn>
+</RevitAddIns>

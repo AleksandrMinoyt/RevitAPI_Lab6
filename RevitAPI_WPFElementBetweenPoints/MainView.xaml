@@ -1,0 +1,34 @@
+﻿<Window x:Class="RevitAPI_WPFElementBetweenPoints.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPI_WPFElementBetweenPoints"
+             mc:Ignorable="d" 
+             Height="250" Width="300"
+             Title="Элементы между двумя точками">
+    <StackPanel >
+              
+        <Label Content="Тип элемента: "/>
+        <ComboBox ItemsSource="{Binding ElementTypes}"
+                  SelectedValue="{Binding SelectedElementType}"
+                  DisplayMemberPath="Name"
+                  Margin="5"
+                  />             
+        
+        <Label Content="Уровень: "/>
+        <ComboBox ItemsSource="{Binding Levels}"
+                  SelectedValue="{Binding SelectedLevel}"
+                  DisplayMemberPath="Name"
+                  Margin="5"
+                  />
+        
+        <Label Content="Количество элементов: "/>
+        <TextBox Text="{Binding ElementCount}"
+                 Margin="5"/>
+      
+        <Button Content="Добавить"
+                Command="{Binding AddElements}"
+                Margin="5"/>
+    </StackPanel>
+</Window>

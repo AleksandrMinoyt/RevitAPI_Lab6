@@ -1,0 +1,40 @@
+﻿<Window x:Class="RevitAPI_WPFCreateDuctFromPoint.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPI_WPFCreateDuctFromPoint"
+             mc:Ignorable="d" 
+             Height="330" Width="300"
+             Title="Создание воздуховода">
+    <StackPanel>
+        <Label Content="Задайте параметры воздуховода"/>
+        
+        <Label Content="Тип воздуховода: "/>
+        <ComboBox ItemsSource="{Binding DuctsTypes}"
+                  SelectedValue="{Binding SelectedDuctsType}"
+                  DisplayMemberPath="Name"
+                  Margin="5"
+                  />
+        
+        <Label Content="Тип системы: "/>
+        <ComboBox ItemsSource="{Binding MepSystemTypeS}"
+                  SelectedValue="{Binding SelectedSystemType}"
+                  DisplayMemberPath="Name"
+                  Margin="5"
+                  />
+        
+        <Label Content="Уровень: "/>
+        <ComboBox ItemsSource="{Binding Levels}"
+                  SelectedValue="{Binding SelectedLevel}"
+                  DisplayMemberPath="Name"
+                  Margin="5"
+                  />
+        <Label Content="Отступ: "/>
+        <TextBox Text="{Binding DuctIndent}"
+                 Margin="5"/>
+        <Button Content="Создать"
+                Command="{Binding CreateDuct}"
+                Margin="5"/>
+    </StackPanel>
+</Window>
